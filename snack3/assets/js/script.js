@@ -1,6 +1,6 @@
 $(document).ready(function(){
     var arrNum = [1,2,3,4,5];
-    var arrLettere = ['a','b','c','d','e','f','g'];
+    var arrLettere = ['a','b','c'];
     var arrFuso = [];
 
     fondiArr(arrNum,arrLettere,arrFuso);
@@ -13,7 +13,7 @@ $(document).ready(function(){
                 arr3.push(arr2[i]);
                 i++
             }
-        }else if(arrLettere.length < arr1.length){
+        }else{
             var i = 0;
             while(i < arr2.length){
                 arr3.push(arr1[i]);
