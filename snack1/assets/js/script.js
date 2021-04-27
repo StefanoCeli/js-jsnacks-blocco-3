@@ -61,10 +61,3 @@ for(var zucchina of zucchine){
 
 console.log('il peso totale delle zucchine è: ' + pesoTotale.toFixed(2))
 });
-
-
-//funzione per scrivere un output in un target
-function printOutput(str,target){
-$(target).text(str);
-};
-
