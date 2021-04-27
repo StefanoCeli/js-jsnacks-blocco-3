@@ -53,17 +53,23 @@ var zucchine = [
 ]
 var zucchinePiccole = [];
 var zucchineLunghe = [];
+var pesoPiccole= 0;
+var pesoLunghe= 0;
 
 for(var zucchina of zucchine){
     if(zucchina['lunghezza'] <= 15 ){
         zucchinePiccole.push(zucchina);
+        pesoPiccole += zucchina['peso']
     }else{
         zucchineLunghe.push(zucchina);
+        pesoLunghe += zucchina['peso']
     }
 }
 console.log('zucchinePiccole:');
 console.log(zucchinePiccole);
+console.log('il peso totale delle zucchine corte è: ' + pesoPiccole);
 console.log('zucchineLunghe:');
 console.log(zucchineLunghe);
+console.log('il peso totale delle zucchine corte è: ' + pesoLunghe);
 
 });
