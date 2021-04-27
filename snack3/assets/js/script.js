@@ -3,21 +3,21 @@ $(document).ready(function(){
     var arrLettere = ['a','b','c','d','e','f','g'];
     var arrFuso = [];
 
-    fondiArr();
+    fondiArr(arrNum,arrLettere,arrFuso);
     
-    function fondiArr(){
-        if(arrNum.length < arrLettere.length){
+    function fondiArr(arr1,arr2,arr3){
+        if(arr1.length < arr2.length){
             var i = 0;
-            while(i < arrNum.length){
-                arrFuso.push(arrNum[i]);
-                arrFuso.push(arrLettere[i]);
+            while(i < arr1.length){
+                arr3.push(arr1[i]);
+                arr3.push(arr2[i]);
                 i++
             }
-        }else if(arrLettere.length < arrNum.length){
+        }else if(arrLettere.length < arr1.length){
             var i = 0;
-            while(i < arrLettere.length){
-                arrFuso.push(arrNum[i]);
-                arrFuso.push(arrLettere[i]);
+            while(i < arr2.length){
+                arr3.push(arr1[i]);
+                arr3.push(arr2[i]);
                 i++
             }
         }
